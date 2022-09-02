@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>KeyboardSurveyForm</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=width-device, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+  </head>
+
+  <body>
+    <header>
+      <div class="top-bar">  
+        <h1 id="title">Keyboard Survey</h1>
+        <p id="description">To determine the right keyboard for you!</p>
+      </div>
+      
+    </header>
+    <div class="formClass">
+      <form id="survey-form">
+        <fieldset id="user-info">
+          <div class="question-boxes">
+            <label id="name-label">Name <br/> <input id="name" type="text" placeholder="full name" required/></label>
+          </div> 
+          <div class="question-boxes">
+            <label id="email-label">Email <br/> <input id="email" type="email" placeholder="email" required/> </label>
+          </div>
+          
+      </fieldset>
+
+      <fieldset id="questions">
+        <div class="question-boxes">
+            <label id="number-label">Number of Keyboards: <br/> <input id="number" type="number" min="1" max="999" placeholder="# of keyboards" required/></label>
+        </div>
+
+        <div class="question-boxes">
+         <label id="drop-label">Favorite Layout: 
+           <select id="dropdown" required>
+             <option>(Select an option)</option>
+             <option>Fullsize</option>
+             <option>80 Percent</option>
+             <option>75 Percent</option>
+             <option>60 Percent</option>
+             <option>40 Percent</option>
+             <option>20 Percent</option>
+           </select>
+         </Label>
+       </div>
+
+       <div class="question-boxes">
+           <label id="radio-label">
+             ANSI or ISO<br/>
+             ANSI:<input type="radio" name="enterLayout" value="ANSI" required/>
+             ISO:<input type="radio" name="enterLayout" value="ANSI" required/>
+          </label>
+      </div>
+
+      <div class="question-boxes">
+          <label id="check-label">
+            Favorite Keycap Profiles:
+            <div class="checkContainer">
+              <label>Cherry: <input type="checkbox" value="1" class="inline"/></label>
+              <label>OEM: <input type="checkbox" value="2"/></label>
+              <label>XDA: <input type="checkbox" value="3"/></label>
+              <label>SA: <input type="checkbox" value="4"/></label>
+              <label>DSA: <input type="checkbox" value="5"/></label>
+            </div>
+          </label>
+      </div>
+      <div class="question-boxes">
+          <label id="textbox-label">
+            How did you get into custom mechanical keyboards?
+            <textarea name="description" rows="4" cols="16" placeholder="I got into keyboards by..." required></textarea>
+          </label>
+      </div>
+      <input type="submit" id="submit"/>
+    </fieldset>
+     
+      </form>
+    </div>
+    </body>
+    <footer>
+      
+    </footer>
+</html>
